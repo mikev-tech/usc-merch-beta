@@ -6,7 +6,7 @@
     <title>USC Online Merch Shop</title>
     <link rel="icon" type="image/ico" href="./images/favicon.ico">
     <meta name="description" content="Offical USC online merch shop for students and alumni">
-    
+
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/landing-piczon.css">
 
@@ -15,8 +15,9 @@
 </head>
 <body class="inter-font-custom">
     <!--Header/Navbar-->
-    <header>
-        <nav class="navbar">
+    <!-- TailwindCSS Header & Nav -->
+    <header class="px-[2.5rem] bg-yellow-400 uppercase">
+        <nav class="p-[1.25rem] h-24 flex items-center navbar">
             <a href="index.html"><img src="./images/Carolian Merch Logo.svg" alt="Official USC Carolinian Merch Logo" class="Logo"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -27,7 +28,7 @@
                 </li> 
 
                 <div class="dropdown">
-                    <button class="dropbtn">Department 
+                    <button class="dropbtn uppercase">Department 
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
@@ -46,18 +47,17 @@
                 </li>  
             </ul>
         </nav>
-        
     </header>
 
     <main>
         <!--Home page-->
         <section class="main-section">
-            <div class="section-content">
+            <div class="bg-green-500 section-content">
                 <div class="content">
                     <h2 class="title">Carolinian Merch</h2> 
                     <p class="description">Welcome to the Official USC Merch Store. <br> Explore and Find your favorite merch! Nosnegger</p>
                     <a href="login.html" class="Order">
-                    <div class="button">Order Now</div>
+                    <div class="bg-yellow-400 hover:bg-yellow-400/90 button">Order Now</div>
                     </a>
                 </div>
             </div>
