@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     try {
         const backgroundImages = [
-            'images/sasmerch.jpg',    
-            'images/safadmerch.jpg',
-            'images/soemerch.jpg',
-            'images/sbemerch.jpg',
-            'images/othersmerch.jpg'
+            './images/bg-images/sasmerch.jpg',    
+            './images/bg-images/safadmerch.jpg',
+            './images/bg-images/soemerch.jpg',
+            './images/bg-images/sbemerch.jpg',
+            './images/bg-images/othersmerch.jpg'
         ];
         
         let currentImageIndex = 0;
