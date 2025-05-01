@@ -124,7 +124,7 @@ header .navbar{
 /* Landing Page */
 .main-section{
     position: relative;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +137,6 @@ header .navbar{
     display: flex;
     text-align: left;
     width: 100vw;
-    height: 90vh;
     padding-left: 100px;
     padding: 36px;
     justify-content: space-between;
