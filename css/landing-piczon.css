@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style: none;
+}   
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+/* Navbar */
+header{
+    background: #ebcc02;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    background-color: #ebcc02;
+    padding: 15px;
+    height: 64px;
+    /*
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: flex-start; */
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+}
+.navbar .nav-menu .nav-link{
+    font-weight: 550;
+    padding: 10px 10px;
+    color: #080b09;
+    transition: 0.5 ease;
+}
+
+.navbar .nav-menu .nav-link:hover{
+    color: white;
+}
+.Logo{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 215px;
+    height: 60px;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn{
+    font-size: large; 
+    padding: 0px 8px; 
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dropdown .dropbtn:hover{
+ /*  color: #209c49; */
+    color: white;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Sliding background */
+#sliding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease;
+}
+/* Landing Page */
+.main-section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 140px;
+    padding-right: 1050px;
+    padding-left: 100px;
+    overflow: hidden;
+}
+.main-section .section-content{
+    display: flex;
+    text-align: left;
+    width: 100vw;
+    padding-left: 100px;
+    padding: 36px;
+    justify-content: space-between;
+    background-color: #209c49;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+.main-section .section-content .title{
+    font-size: 27px;
+    padding: 2px;
+    user-select: none;
+}
+
+.main-section .section-content .description{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    padding: 2px;
+    user-select: none;
+}
+.Order{
+    color: black;
+    font-size: small;
+}
+.Order .button{
+    display: inline-block;
+    background:#f9df34; 
+    padding: 12px 35px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.Order .button:hover{
+    transition: 0.3s;
+    background-color: #f2f086;
+}
+/* Popular Products Section */
+
+.Popular{
+ /*   background-color: #dbfbeb; */
+ background-color: #FFFDF2;
+    min-height: 100vh;
+}
+.Title{
+    text-align: center;
+    text-transform: uppercase;
+    height: 10px;
+    padding: 25px;
+}
+/* Card */
+.popular-container{
+    width: 100vw;
+    padding: 100px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background-color: white;
+    border-radius: 11px;
+    transition: 0.3s;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    background: white;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+#popular-image{
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-color: #f9df34;
+}
+
+/* Department Section */
+
+.Department{
+ /*   background-color: #dbfbeb; */
+    background-color: #FFFDF2;
+}
+.Title2{
+    text-align: center;
+    text-transform: uppercase;
+    height: 10px;
+    padding: 25px;
+}
+/* Card */
+.card-container{
+    width: 100vw;
+    padding: 130px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.card {
+    /* shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 500px;
+    max-height: 500px;
+  }
+  
+  /* On mouse-over */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#card-image{
+    border-radius: 10px 10px 0 0;
+    height: 350px;
+    margin-right: 15px;
+}
+
+
+/* footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+}   
+.foot-heading {
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.foot-heading2 {
+    margin-left: 8px;
+}
+.foot-heading3{
+    margin-left: 8px;
+}
+.foot-heading4{
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#foot-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 0 20px;
+}
+
+#foot-logo {
+    margin-left: 35px;
+    width: 215px;
+    height: 60px;
+}
+
+footer div#social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer div#social-media img {
+    max-height: 40px;
+    max-width: 40px;
+    cursor: pointer;
+}
