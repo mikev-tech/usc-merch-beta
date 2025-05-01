@@ -20,7 +20,7 @@ async function displayProducts(){
     if(products.length > 0){
         let popularImages = document.querySelectorAll('img.popular-image');
         let popularTitles = document.querySelectorAll('h4.select-none');
-        const popular = [1, 25, 6, 31];
+        const popular = [1, 25, 6, 5];
 
         for(let i = 0; i < 4; i++){
             const title = products[popular[i]].title;
