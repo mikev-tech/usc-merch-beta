@@ -40,10 +40,8 @@ button {
 .navbar .nav-menu .nav-link:hover{
     color: white;
     font-weight: 600;
-    /* text-decoration: underline; */
 }
 .Logo{
-    /* margin-left: 10px; */
     margin-right: 1.5rem;
     width: 215px;
     height: 60px;
@@ -66,10 +64,8 @@ button {
 }
 
 .dropdown .dropbtn:hover{
- /*  color: #209c49; */
     color: white;
     font-weight: 600;
-    /* text-decoration: underline; */
 }
   
 .dropdown-content{
@@ -118,7 +114,6 @@ button {
     align-items: center;
     justify-content: flex-start;
     padding-bottom: 140px;
-    /* padding-right: 1050px; */
     padding-left: 100px;
     overflow: hidden;
 }
@@ -129,7 +124,6 @@ button {
     padding-left: 100px;
     padding: 36px;
     justify-content: space-between;
-    /* background-color: #209c49; */
     color: white;
     border-radius: 8px;
     position: relative;
@@ -161,13 +155,11 @@ button {
 }
 .Order .button:hover{
     transition: 0.3s;
-    /* background-color: #f2f086; */
 }
 /* Popular Products Section */
 
 .Popular{
- /*   background-color: #dbfbeb; */
- background-color: #FFFDF2;
+    background-color: #FFFDF2;
     min-height: 100vh;
 }
 .Title{
@@ -214,7 +206,6 @@ button {
 /* Department Section */
 
 .Department{
- /*   background-color: #dbfbeb; */
     background-color: #FFFDF2;
 }
 .Title2{
@@ -250,53 +241,3 @@ button {
     height: 350px;
     margin-right: 15px;
 }
-
-/* footer */
-/* footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 30px;
-}   
-.foot-heading {
-    margin-left: 8px;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.foot-heading2 {
-    margin-left: 8px;
-}
-.foot-heading3{
-    margin-left: 8px;
-}
-.foot-heading4{
-    margin-right: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#foot-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    padding: 0 20px;
-}
-
-#foot-logo {
-    margin-left: 35px;
-    width: 215px;
-    height: 60px;
-}
-
-footer div#social-media {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-footer div#social-media img {
-    max-height: 40px;
-    max-width: 40px;
-    cursor: pointer;
-} */
