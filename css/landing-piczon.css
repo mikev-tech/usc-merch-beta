@@ -1,9 +1,11 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
-}
+    font-family: "Inter", sans-serif;
+ } /* use body element instead of * universal element */
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -264,7 +266,7 @@ header .navbar{
 
 
 /* footer */
-footer {
+/* footer {
     background-color: #000000;
     color: #ffffff;
     padding: 30px;
@@ -311,4 +313,4 @@ footer div#social-media img {
     max-height: 40px;
     max-width: 40px;
     cursor: pointer;
-}
+} */
