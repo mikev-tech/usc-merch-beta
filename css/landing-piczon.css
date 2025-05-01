@@ -147,7 +147,6 @@ button {
 }
 .Order .button{
     display: inline-block;
-    /* background:#f9df34;  */
     padding: 12px 35px;
     font-size: 14px;
     font-weight: 600;
@@ -159,10 +158,13 @@ button {
 /* Popular Products Section */
 
 .Popular{
-    background-color: #FFFDF2;
-    min-height: 100vh;
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 .Title{
+    font-size: 1.5em;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     height: 10px;
@@ -197,7 +199,7 @@ button {
     border-radius: 10px;
 
 }
-#popular-image{
+.popular-image{
     height: 200px;
     border-radius: 10px 10px 0 0;
     background-color: #f9df34;
@@ -206,9 +208,13 @@ button {
 /* Department Section */
 
 .Department{
-    background-color: #FFFDF2;
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 .Title2{
+    font-size: 1.5em;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     height: 10px;
