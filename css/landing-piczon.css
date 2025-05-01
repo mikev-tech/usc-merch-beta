@@ -137,6 +137,7 @@ header .navbar{
     display: flex;
     text-align: left;
     width: 100vw;
+    height: 90vh;
     padding-left: 100px;
     padding: 36px;
     justify-content: space-between;
