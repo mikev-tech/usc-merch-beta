@@ -23,29 +23,30 @@ button {
     border: none;
     background: none;
 }
+
 /* Navbar */
-header{
+/* header{
     background: #ebcc02;
-}
-header .navbar{
-    display: flex;
-    align-items: center;
-    background-color: #ebcc02;
-    padding: 15px;
-    height: 64px;
+} */
+/* header .navbar{ */
+    /* display: flex; */
+    /* align-items: center; */
+    /* background-color: #ebcc02; */
+    /* padding: 15px; */
+    /* height: 64px; */
     /*
     display: flex;
     padding: 5px;
     align-items: center;
     justify-content: flex-start; */
-}
+/* } */
 .navbar .nav-menu{
     display: flex;
     gap: 10px;
     font-size: large;
 }
 .navbar .nav-menu .nav-link{
-    font-weight: 550;
+    font-weight: normal;
     padding: 10px 10px;
     color: #080b09;
     transition: 0.5 ease;
@@ -53,10 +54,12 @@ header .navbar{
 
 .navbar .nav-menu .nav-link:hover{
     color: white;
+    font-weight: 600;
+    /* text-decoration: underline; */
 }
 .Logo{
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px; */
+    margin-right: 1.5rem;
     width: 215px;
     height: 60px;
 }
@@ -74,13 +77,14 @@ header .navbar{
     color: black;
     background-color: inherit;
     font-family: inherit;
-    font-weight: 600;
     margin: 0;
 }
 
 .dropdown .dropbtn:hover{
  /*  color: #209c49; */
     color: white;
+    font-weight: 600;
+    /* text-decoration: underline; */
 }
   
 .dropdown-content{
@@ -89,7 +93,7 @@ header .navbar{
     background-color: #f9f9f9;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
 }
   
 .dropdown-content a{
@@ -119,7 +123,7 @@ header .navbar{
     z-index: -1;
     background-size: cover;
     background-position: center;
-    transition: background-image 1s ease;
+    transition: background-image 1.2s ease;
 }
 /* Landing Page */
 .main-section{
@@ -127,20 +131,20 @@ header .navbar{
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding-bottom: 140px;
-    padding-right: 1050px;
+    /* padding-right: 1050px; */
     padding-left: 100px;
     overflow: hidden;
 }
 .main-section .section-content{
     display: flex;
     text-align: left;
-    width: 100vw;
+    width: 26rem;
     padding-left: 100px;
     padding: 36px;
     justify-content: space-between;
-    background-color: #209c49;
+    /* background-color: #209c49; */
     color: white;
     border-radius: 8px;
     position: relative;
@@ -164,7 +168,7 @@ header .navbar{
 }
 .Order .button{
     display: inline-block;
-    background:#f9df34; 
+    /* background:#f9df34;  */
     padding: 12px 35px;
     font-size: 14px;
     font-weight: 600;
@@ -172,7 +176,7 @@ header .navbar{
 }
 .Order .button:hover{
     transition: 0.3s;
-    background-color: #f2f086;
+    /* background-color: #f2f086; */
 }
 /* Popular Products Section */
 
@@ -261,7 +265,6 @@ header .navbar{
     height: 350px;
     margin-right: 15px;
 }
-
 
 /* footer */
 /* footer {
