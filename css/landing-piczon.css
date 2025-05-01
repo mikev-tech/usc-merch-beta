@@ -5,7 +5,6 @@ body {
     font-family: "Inter", sans-serif;
  } /* use body element instead of * universal element */
 
-
 html{
     scroll-behavior: smooth;
 }
