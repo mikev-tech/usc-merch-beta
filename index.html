@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" type="image/ico" href="./images/favicon.ico">
+    <meta name="description" content="Landing page">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu :ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Landing.css">
+</head>
+<body>
+    <!--Header/Navbar-->
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="./images/Carolian Merch Logo.svg" alt="Official USC Carolinian Merch Logo" class="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="Home page.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#popular" class="nav-link">New Merch</a>
+                </li> 
+
+                <div class="dropdown">
+                    <button class="dropbtn">Department 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#department">SAS</a>
+                      <a href="#department">SAFAD</a>
+                      <a href="#department">SOE</a>
+                      <a href="#slg">SLG</a>
+                      <a href="#shcp">SHCP</a>
+                      <a href="#sbe">SBE</a>
+                      <a href="#soed">SOED</a>
+                      <a href="#others">OTHERS</a>
+                    </div>
+                  </div> 
+                <li class="nav-item">
+                    <a href="Login page.html" class="nav-link">Log In</a>
+                </li>  
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <!--Home page-->
+        <section class="main-section">
+            <div class="section-content">
+                <div class="content">
+                    <h2 class="title">Carolinian Merch</h2> 
+                    <p class="description">Welcome to the Official USC Merch Store. <br> Explore and Find your favorite merch! Nosnegger</p>
+                    <a href="Login page.html" class="Order">
+                    <div class="button">Order Now</div>
+                    </a>
+                </div>
+            </div>
+            <!-- Background img -->
+            <div id="sliding"></div>
+        </section>
+
+        <!-- Popular Products -->
+        <div class="Popular">
+            <div class="Title" id="popular">
+                <h1>Popular Products</h1>
+            </div>
+            <div class="popular-container">
+                <div class="card">
+                    <a href="login.html">
+                    <img src="./images/SAS.jpg" alt="Avatar" style="width:100%" id="popular-image">
+                        <div class="container">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html">
+                    <img src="./images/SAS.jpg" alt="Avatar" style="width:100%" id="popular-image">
+                        <div class="container">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html">
+                    <img src="./images/SAS.jpg" alt="Avatar" style="width:100%" id="popular-image">
+                        <div class="container">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html">
+                    <img src="./images/SAS.jpg" alt="Avatar" style="width:100%" id="popular-image">
+                        <div class="container">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departments -->
+
+        <div class="Department">
+            <div class="Title2" id="department">
+                <h1>Departments</h1>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <a href="login.html">
+                    <img src="./images/SAS.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SAS</b></h4>
+                        <p>School of Arts & Science</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html" id="safad">
+                    <img src="./images/SAFAD.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SAFAD</b></h4>
+                        <p>School of Architecture, Fine Arts and Design</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html" id="soe">
+                    <img src="./images/SOE.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SOE</b></h4>
+                        <p>School of Engineering</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html" id="slg">
+                    <img src="./images/SLG.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SLG</b></h4>
+                        <p>School of Law and Governance</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html" id="shcp">
+                    <img src="./images/SHCP.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SHCP</b></h4>
+                        <p>School of Health Care Professions</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html" id="sbe">
+                    <img src="./images/SBE.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SBE</b></h4>
+                        <p>School of Business and Economics</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="login.html" id="soed">
+                    <img src="./images/SoEduc.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>SoE</b></h4>
+                        <p>School Of Education</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="404-error page.html" id="others">
+                    <img src="./images/Others.jpg" alt="Avatar" style="width:100%" id="card-image">
+                    <div class="container">
+                        <h4><b>Others</b></h4>
+                        <br>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="foot-flex">
+            <div>
+                <p class="foot-heading">Contact Information:</p>
+                <p class="foot-heading2">P. del Rosario St., Cebu City, 6000, Philippines</p>
+                <p class="foot-heading3">Email: merch@usc.edu.ph</p>
+            </div>
+            <div>
+                <p class="foot-heading4">Social Media:</p>
+                <div id="social-media">
+                    <a href="https://www.facebook.com/usccebu" target="_blank"><img src="Images/facebook.png" alt="facebook-icon"></a>
+                    <a href="https://twitter.com/uscphilippines" target="_blank"><img src="Images/twitter.png" alt="x-twitter-icon"></a>
+                    <a href="https://www.instagram.com/uscphilippines" target="_blank"><img src="Images/instagram.png" alt="instagram-icon"></a>
+                    
+                </div>
+            </div>
+            <div>
+                <img src="Images/Carolian Reversed Logo.png" alt="Carolian Merch Logo" id="foot-logo" >
+            </div>
+        </div>
+    </footer>
+    <script src="./js/landing-piczon.js"></script>
+</body>
+</html>
