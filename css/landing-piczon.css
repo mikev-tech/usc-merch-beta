@@ -25,21 +25,6 @@ button {
 }
 
 /* Navbar */
-/* header{
-    background: #ebcc02;
-} */
-/* header .navbar{ */
-    /* display: flex; */
-    /* align-items: center; */
-    /* background-color: #ebcc02; */
-    /* padding: 15px; */
-    /* height: 64px; */
-    /*
-    display: flex;
-    padding: 5px;
-    align-items: center;
-    justify-content: flex-start; */
-/* } */
 .navbar .nav-menu{
     display: flex;
     gap: 10px;
