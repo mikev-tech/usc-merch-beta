@@ -2,16 +2,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
- } /* use body element instead of * universal element */
 
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+ } /* use body element instead of * universal element */
 
 html{
     scroll-behavior: smooth;
-}
-body{
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 ul {
