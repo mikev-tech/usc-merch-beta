@@ -1,30 +1,41 @@
+import id_params from "./productURI-params.js";
 import getProduct from "./getSingleProduct.js";
 
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
+let productLeft = document.querySelector('#product-left');
+let productForm = document.getElementById('product-form');
 
-if(urlParams.has('id')){
-    displayProduct();
-}
+let productImage = productLeft.querySelector('img.productImage');
+let productDscrpt = productLeft.querySelector('p#description');
 
-async function displayProduct(){
-    const productID = urlParams.get('id');
-    console.log(productID);
+let productTitle = productForm.querySelector('h1#title');
+let productStock = productForm.querySelector('p#stock');
+let productPrice = productForm.querySelector('p#price');
+let productCategory = productForm.querySelector('span#category');
+let productSKU = productForm.querySelector('span#sku');
 
-    const apiLink = 'https://api.escuelajs.co/api/v1/products';
-    const getSingleProduct = `${apiLink}/${productID}`;
+// Initialize the page
+document.addEventListener('DOMContentLoaded', () => {
+    displayMainProduct();
+});
 
-    const product = await getProduct(getSingleProduct);
 
-    const productImgDesc = document.querySelector('div.product-imgDesc');
-    const productForm = document.querySelector('div.product-form');
+async function displayMainProduct(){
+    const productURI_ById = await id_params();
+    if(productURI_ById === null){
+        return;
+    }
 
-    productImage = productImgDesc.querySelector('img.productImage');
-    productDescription = productImgDesc.querySelector('p#description');
-    productTitle = productForm.querySelector('h1#name');
-    productStock = productForm.querySelector('p#stock');
-    productPrice = productForm.querySelector('p#price');
-    productSKU = productForm.querySelector('span#sku');
+    const product = await getProduct(productURI_ById);
+    console.log(product);
 
-    const {} = product;
+    const {title, price, description, id} = product;
+    // Only use the first image if available
+    const imageUrl = product.images && product.images.length > 0 ? 
+                product.images[0] : './images/SAS.jpg';
+    
+    document.title = title;
+    productTitle.innerHTML = title;
+    productImage.src = imageUrl;
+    productDscrpt.innerHTML = description;
+    productPrice.innerHTML = `₱${price.toLocaleString()}`;
 }

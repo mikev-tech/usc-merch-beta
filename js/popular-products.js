@@ -24,7 +24,7 @@ async function displayProducts(){
 
         let popularImages = document.querySelectorAll('img.popular-image');
         let popularTitles = document.querySelectorAll('h4.select-none');
-        const popular = [1, 25, 6, 5];
+        const popular = [1, 3, 6, 5];
 
         let i = 0;
         for(const card of cards){
