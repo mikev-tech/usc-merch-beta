@@ -9,7 +9,7 @@ async function id_params(){
     const productID = urlParams.get('id');
     console.log(productID);
     
-    const apiLink = 'https://api.escuelajs.co/api/v1/products';
+    const apiLink = 'https://dummyjson.com/products';
     const singleProductID = `${apiLink}/${productID}`;
     return singleProductID;
 }

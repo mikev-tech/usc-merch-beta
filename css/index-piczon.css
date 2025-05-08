@@ -208,7 +208,7 @@ button {
 .popular-image{
     height: 100%;
     border-radius: 10px 10px 0 0;
-    background-color: #FDC800;
+    background-color: hsla(0, 0%, 50%, 0.2);
 }
 
 

@@ -2,7 +2,7 @@ let targetPage = 'product-page.html';
 
 async function fetchData(){
     try {
-        const response = await fetch('https://api.escuelajs.co/api/v1/products');
+        const response = await fetch('https://dummyjson.com/products');
 
         if(!response.ok){
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -16,14 +16,12 @@ async function fetchData(){
 }
 
 async function displayProducts(){
-    const products = await fetchData();
+    const data = await fetchData();
+    const products = data.products;
     console.log(products);
 
     if(products.length > 0){
         let cards = document.querySelectorAll('div.card-popular');
-
-        let popularImages = document.querySelectorAll('img.popular-image');
-        let popularTitles = document.querySelectorAll('h4.select-none');
         const popular = [1, 3, 6, 5];
 
         let i = 0;

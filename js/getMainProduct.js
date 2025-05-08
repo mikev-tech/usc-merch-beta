@@ -1,5 +1,5 @@
 import id_params from "./productURI-params.js";
-import getProduct from "./getSingleProduct.js";
+import getProduct from "./components/singleProduct.js";
 
 let productLeft = document.querySelector('#product-left');
 let productForm = document.getElementById('product-form');
@@ -36,7 +36,7 @@ async function displayMainProduct(){
     // Only use the first image if available
     const imageUrl = product.images && product.images.length > 0 ? 
                 product.images[0] : './images/SAS.jpg';
-    const category = product.category.name;
+    const category = product.category;
     
     document.title = title;
     breadcrumbProduct.innerHTML = title;
