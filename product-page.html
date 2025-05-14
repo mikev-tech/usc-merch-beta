@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/font.css">
 </head>
 <body class="inter-font-custom tracking-wide text-gray-900">
+    <!-- Sidebar Menu -->
     <section id="sidebar" class="size-full absolute z-10 hidden">
         <aside class="w-xs h-full absolute z-20 bg-yellow-400 duration-[0.5ms]">
             <div class="flex flex-col items-center gap-[2em] text-center text-xl py-[6rem]" >
@@ -33,6 +34,34 @@
           <!-- Overlay -->
         </div>
     </section>
+
+    <section class="bg-yellow-400 w-68 px-8 py-8">
+      <aside class="flex flex-col">
+        <div>
+          <!-- Username and prof-pic -->
+          <div class="py-8">
+            <img src="./images/user.png" id="profile-pic" class="w-[4rem] h-[4rem]" alt="profile-pic">
+            <h2>Username</h2>
+          </div>
+          <!-- sidebar tabs -->
+          <nav>
+            <ul>
+              <li class="px-[1em] py-[1em] border">Profile</li>
+              <li class="px-[1em] py-[1em] border">New Merch</li>
+              <li class="px-[1em] py-[1em] border">Departments</li>
+              <li class="px-[1em] py-[1em] border">Settings</li>
+            </ul>
+          </nav>
+          <!-- Logout btn -->
+          <hr>
+          <div class="flex gap-4">
+            <img src="" alt="logout icon" class="w-[12px] h-[12px]">
+            <button class="px-[1em] py-[1em] border">Logout</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
     <header class="px-[2.5rem] bg-yellow-400">
         <div class="flex items-center justify-between p-[20px]">
             <div>
