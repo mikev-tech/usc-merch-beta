@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="inter-font-custom tracking-wide text-gray-900">
+    <header class="px-[2.5rem] bg-yellow-400">
+        <div class="flex items-center justify-between p-[20px]">
+            <div>
+                <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
+            </div>
+            <div class="">
+                <a href="../index.html">
+                  <img class="size-[]" src="../images/Carolian Merch Logo.svg" alt="" class="w-xs">
+                </a>
+            </div>
+            <div class="flex items-center">
+                <img src="../images/search-interface-symbol.png" alt="" class="size-[2rem] mr-[1em]">
+                <a href="./shopping-cart.html"><img src="../images/shopping-bag.png" alt="" class="size-[3rem]"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active"><i class="fa-regular fa-user"></i> Profile Settings</a></li>
+                        <li><a href="#"><i class="fa-regular fa-eye"></i> Recently Viewed</a></li>
+                        <li><a href="#"><i class="fa-solid fa-clipboard-list"></i> Order History</a></li>
+                        <li><a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content">
+                <div class="profile-avatar">
+                    <div class="avatar-container">
+                        <img src="https://via.placeholder.com/150" alt="Profile Avatar" id="avatar-img">
+                    </div>
+                    <div class="avatar-buttons">
+                        <button id="upload-avatar" class="btn btn-primary">Upload Avatar</button>
+                        <button id="delete-avatar" class="btn btn-secondary">Delete Avatar</button>
+                    </div>
+                    <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+                </div>
+
+                <div class="profile-section">
+                    <h2>Personal Information</h2>
+                    <form id="personal-info-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username">
+                            </div>
+                            <div class="form-group age-password-group">
+                                <div class="age-group">
+                                    <label for="age">Age</label>
+                                    <input type="number" id="age" name="age">
+                                </div>
+                                <div class="password-group">
+                                    <label for="password">Password</label>
+                                    <button type="button" id="edit-password" class="btn btn-edit">Edit Password</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="profile-section">
+                    <h2>Shipping Address & Payment Method</h2>
+                    <form id="shipping-payment-form">
+                        <!-- Shipping address fields would go here -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state">
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">Zip Code</label>
+                                <input type="text" id="zip" name="zip">
+                            </div>
+                        </div>
+                        
+                        <!-- Payment method fields would go here -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****">
+                            </div>
+                            <div class="form-group">
+                                <label for="card-name">Name on Card</label>
+                                <input type="text" id="card-name" name="card-name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Password Edit Modal -->
+    <div id="password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Change Password</h2>
+            <form id="password-form">
+                <div class="form-group">
+                    <label for="current-password">Current Password</label>
+                    <input type="password" id="current-password" name="current-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" name="new-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-primary">Update Password</button>
+                    <button type="button" class="btn btn-secondary modal-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="px-[2.5rem] py-[1.5rem] bg-black/90 text-white">
+        <div class="flex flex-wrap-reverse items-center justify-between gap-[2em] p-[1.25rem]">
+            <div>
+                <p class="uppercase font-medium text-xl tracking-wide mb-[1em]">Contact Information</p>
+                <p class="tracking-wide">P. del Rosario St., Cebu City, 6000, Philippines</p>
+                <p class="tracking-wide">Email: merch@usc.edu.ph</p>
+            </div>
+            <div>
+                <p id="social" class="uppercase font-medium text-xl tracking-wide mb-[1em]">Social Media</p>
+                <div class="flex">
+                    <a class="size-[2.4rem] mr-[1.4em]" href="https://www.facebook.com/usccebu" target="_blank"><img src="../images/logos/facebook.png" alt="facebook-icon"></a>
+                    <a class="size-[2.4rem] mr-[1.4em]" href="https://twitter.com/uscphilippines" target="_blank"><img src="../images/logos/twitter.png" alt="x-twitter-icon"></a>
+                    <a class="size-[2.4rem] mr-[1.4em]" href="https://www.instagram.com/uscphilippines" target="_blank"><img src="../images/logos/instagram.png" alt="instagram-icon"></a>
+                </div>
+            </div>
+            <div>
+                <a href="../index.html">
+                  <img src="../images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>

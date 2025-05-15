@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="../css/font.css">
+    <!-- <link rel="stylesheet" href="../css/side-menu.css"> -->
 </head>
 <body class="inter-font-custom tracking-wide text-gray-900">
     <!-- Sidebar Menu -->
@@ -19,24 +20,25 @@
                     <a href="../pages/dashboard.html"><img class="size-[6rem]" src="../images/user.png" alt="user-icon"></a>
                     <a href="../pages/dashboard.html" class="tracking-wide hover:text-gray-700" >24103094</a>
                 </div>
-                <nav>
+                <nav class="items-start">
                     <ul>
                         <li id="x-close" class="absolute top-[0.8rem] right-[1.4rem] text-2xl hover:text-gray-700"><a href="javascript:void(0)" id="closebtn">&times;</a></li>
-                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../index.html">Home</a></li>
-                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="#">New Merch</a></li>
-                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/product-lists.html">Department</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="#">Profile Settings</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="#">Add/Remove Products</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/product-lists.html">All Merch Products</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/login.html">School Merch</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/login.html">My Cart</a></li>
                         <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/login.html">Logout</a></li>
                     </ul>
                 </nav>
             </div>
         </aside>
         <div class="w-full h-full bg-black/90 duration-[0.5ms]" id="overlay">
-          <!-- Overlay -->
         </div>
     </section>
     <header class="px-[2.5rem] bg-yellow-400">
         <div class="flex items-center justify-between p-[20px]">
-            <div>
+            <div class="menu-btn">
                 <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
             </div>
             <div class="">
@@ -77,5 +79,6 @@
     </footer>
     <script src="../js/sidemenu.js"></script>
     <script type="module" src="../js/getMainProduct.js"></script>
+    <!-- <script src="../js/side-menu.js"></script> -->
 </body>
 </html>
