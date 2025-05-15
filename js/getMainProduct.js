@@ -35,7 +35,7 @@ async function displayMainProduct(){
     const {title, price, description, id} = product;
     // Only use the first image if available
     const imageUrl = product.images && product.images.length > 0 ? 
-                product.images[0] : './images/SAS.jpg';
+                product.images[0] : '../images/SAS.jpg';
     const category = product.category;
     
     document.title = title;

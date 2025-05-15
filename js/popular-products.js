@@ -1,4 +1,4 @@
-let targetPage = 'product-page.html';
+let targetPage = 'pages/product-page.html';
 
 async function fetchData(){
     try {
