@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="icon" type="image/ico" href="../images/favicon.ico">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="../css/checkout-test.css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body>
+    <header class="px-[2.5rem] bg-yellow-400">
+        <div class="flex items-center justify-between p-[20px]">
+            <div>
+                <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
+            </div>
+            <div class="">
+                <a href="../index.html">
+                  <img class="size-[]" src="../images/Carolian Merch Logo.svg" alt="" class="w-xs">
+                </a>
+            </div>
+            <div class="flex items-center">
+                <!-- <img src="../images/search-interface-symbol.png" alt="" class="size-[2rem] mr-[1em]"> -->
+                <a href="./shopping-cart.html"><img src="../images/shopping-bag.png" alt="" class="size-[3rem]"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <div class="shopping-cart">
+                <h2>Shopping Cart</h2>
+                <p class="cart-total">Total <span id="cart-count">0</span> Item(s)</p>
+                
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                
+                <div class="empty-cart-message" id="empty-cart-message">
+                    <p>Your cart is empty. Add some items to proceed to checkout.</p>
+                    <a href="products.html" class="continue-shopping-btn">Continue Shopping</a>
+                </div>
+            </div>
+            
+            <div class="summary">
+                <h2>Summary</h2>
+                <p class="summary-total">Total <span id="summary-count">0</span> Item(s)</p>
+                
+                <div class="delivery-option">
+                    <p>Delivery Option:</p>
+                    <select id="delivery-option">
+                        <option value="">Select Delivery Option</option>
+                        <option value="standard">Standard Delivery (P 50.00)</option>
+                        <option value="express">Express Delivery (P 100.00)</option>
+                        <option value="pickup">Store Pickup (Free)</option>
+                    </select>
+                </div>
+                
+                <div class="vouchers">
+                    <p>Vouchers:</p>
+                    <select id="voucher-option">
+                        <option value="">Select Voucher</option>
+                        <option value="newuser">New User (10% OFF)</option>
+                        <option value="freeship">Free Shipping</option>
+                        <option value="discount20">P 200 OFF (Min P 1000)</option>
+                    </select>
+                </div>
+                
+                <div class="payment-method">
+                    <p>Payment Method:</p>
+                    <select id="payment-method">
+                        <option value="">Select Payment Method</option>
+                        <option value="cod">Cash on Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                        <option value="ewallet">E-wallet</option>
+                        <option value="bank">Bank Transfer</option>
+                    </select>
+                </div>
+                
+                <div class="delivery-date">
+                    <p>Estimated Delivery Date:</p>
+                    <p id="delivery-date">--/--/--</p>
+                </div>
+                
+                <div class="price-details">
+                    <div class="subtotal">
+                        <p>Subtotal:</p>
+                        <p id="subtotal-price">P 0.00</p>
+                    </div>
+                    <div class="delivery-fee">
+                        <p>Delivery Fee:</p>
+                        <p id="delivery-fee">P 0.00</p>
+                    </div>
+                    <div class="discount">
+                        <p>Discount:</p>
+                        <p id="discount-amount">-P 0.00</p>
+                    </div>
+                    <div class="total-price">
+                        <p>Total Price</p>
+                        <p id="total-price">P 0.00</p>
+                    </div>
+                </div>
+                
+                <button id="checkout-btn" class="checkout-btn" disabled>CHECKOUT</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Product Showcase Section (For demonstration) -->
+    <section class="product-showcase" id="product-showcase">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-card" data-id="1" data-price="599.00" data-name="Premium T-Shirt">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <h3>Premium T-Shirt</h3>
+                <p class="product-price">P 599.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="2" data-price="899.00" data-name="Designer Jeans">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Designer Jeans</h3>
+                <p class="product-price">P 899.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="3" data-price="499.00" data-name="Casual Sneakers">
+                <img src="https://via.placeholder.com/150" alt="Product 3">
+                <h3>Casual Sneakers</h3>
+                <p class="product-price">P 499.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-id="4" data-price="799.00" data-name="Stylish Backpack">
+                <img src="https://via.placeholder.com/150" alt="Product 4">
+                <h3>Stylish Backpack</h3>
+                <p class="product-price">P 799.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Checkout</h2>
+            
+            <div class="checkout-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" placeholder="Enter your complete address"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="text" id="contact" placeholder="Enter your contact number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items"></div>
+                    <div class="checkout-total">
+                        <p>Total Amount:</p>
+                        <p id="checkout-total-price">P 0.00</p>
+                    </div>
+                </div>
+                
+                <button id="place-order-btn" class="place-order-btn">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="order-confirmation" class="modal">
+        <div class="modal-content">
+            <h2>Order Confirmed!</h2>
+            <p>Thank you for your purchase. Your order has been confirmed.</p>
+            <p>Order Number: <span id="order-number"></span></p>
+            <p>Estimated Delivery Date: <span id="confirm-delivery-date"></span></p>
+            <button id="continue-shopping" class="continue-shopping-btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="../js/checkout-test.js"></script>
+</body>
+</html>

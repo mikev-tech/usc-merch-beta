@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="icon" type="image/ico" href="./images/favicon.ico">
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body class="inter-font-custom tracking-wide text-gray-900">
+    <!-- Sidebar Menu -->
+    <section id="sidebar" class="size-full absolute z-10 hidden">
+        <aside class="w-xs h-full absolute z-20 bg-yellow-400 duration-[0.5ms]">
+            <div class="flex flex-col items-center gap-[2em] text-center text-xl py-[6rem]" >
+                <div class="flex flex-col gap-[1rem]">
+                    <a href="../pages/dashboard.html"><img class="size-[6rem]" src="../images/user.png" alt="user-icon"></a>
+                    <a href="../pages/dashboard.html" class="tracking-wide hover:text-gray-700" >24103094</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li id="x-close" class="absolute top-[0.8rem] right-[1.4rem] text-2xl hover:text-gray-700"><a href="javascript:void(0)" id="closebtn">&times;</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../index.html">Home</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="#">New Merch</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/product-lists.html">Department</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/login.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="w-full h-full bg-black/90 duration-[0.5ms]" id="overlay">
+          <!-- Overlay -->
+        </div>
+    </section>
+    <header class="px-[2.5rem] bg-yellow-400">
+        <div class="flex items-center justify-between p-[20px]">
+            <div>
+                <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
+            </div>
+            <div class="">
+                <a href="../index.html">
+                  <img class="size-[]" src="../images/Carolian Merch Logo.svg" alt="" class="w-xs">
+                </a>
+            </div>
+            <div class="flex items-center">
+                <img src="../images/search-interface-symbol.png" alt="" class="size-[2rem] mr-[1em]">
+                <a href="shopping-cart.html"><img src="../images/shopping-bag.png" alt="" class="size-[3rem]"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <footer class="px-[2.5rem] py-[1.5rem] bg-black/90 text-white">
+        <div class="flex flex-wrap-reverse items-center justify-between gap-[2em] p-[1.25rem]">
+            <div>
+                <p class="uppercase font-medium text-xl tracking-wide mb-[1em]">Contact Information</p>
+                <p class="tracking-wide">P. del Rosario St., Cebu City, 6000, Philippines</p>
+                <p class="tracking-wide">Email: merch@usc.edu.ph</p>
+            </div>
+            <div>
+                <p id="social" class="uppercase font-medium text-xl tracking-wide mb-[1em]">Social Media</p>
+                <div class="flex">
+                    <a class="size-[2.4rem] mr-[1.4em]" href="https://www.facebook.com/usccebu" target="_blank"><img src="../images/logos/facebook.png" alt="facebook-icon"></a>
+                    <a class="size-[2.4rem] mr-[1.4em]" href="https://twitter.com/uscphilippines" target="_blank"><img src="../images/logos/twitter.png" alt="x-twitter-icon"></a>
+                    <a class="size-[2.4rem] mr-[1.4em]" href="https://www.instagram.com/uscphilippines" target="_blank"><img src="../images/logos/instagram.png" alt="instagram-icon"></a>
+                </div>
+            </div>
+            <div>
+                <a href="../index.html">
+                  <img src="../images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/sidemenu.js"></script>
+    <script type="module" src="../js/getMainProduct.js"></script>
+</body>
+</html>
