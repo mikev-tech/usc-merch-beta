@@ -16,83 +16,101 @@
 <body class="inter-font-custom">
     <!--Header/Navbar-->
     <!-- TailwindCSS Header & Nav -->
-    <header class="px-[2.5rem] bg-yellow-400 uppercase">
-        <nav class="p-[1.25rem] h-24 flex items-center navbar">
-            <a href="../index.html"><img src="../images/Carolian Merch Logo.svg" alt="Official USC Carolinian Merch Logo" class="Logo"></a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#popular" class="nav-link">New Merch</a>
-                </li> 
-
-                <div class="dropdown">
-                    <button class="dropbtn uppercase">Department 
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="../pages/sas.html">SAS</a>
-                      <a href="../pages/safad.html">SAFAD</a>
-                      <a href="../pages/soe.html">SOE</a>
-                      <a href="../pages/slg.html">SLG</a>
-                      <a href="../pages/shcp.html">SHCP</a>
-                      <a href="../pages/sbe.html">SBE</a>
-                      <a href="../pages/sed.html">SOED</a>
-                      <a href="../pages/sbe.html">OTHERS</a>
-                    </div>
-                  </div> 
-                <li class="nav-item">
-                    <a href="../pages/login.html" class="nav-link">Log In</a>
-                </li>  
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        </section>
-        <div class="Popular">
-            <div class="Title" id="popular">
-                <h2>School Of Health Care Professions</h2>
+    <!-- Logged In Header nav -->
+    <header class="px-[2.5rem] bg-yellow-400">
+        <div class="flex items-center justify-between p-[20px]">
+            <div>
+                <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
             </div>
-            <div class="popular-container">
-                <div class="card-popular">
-                    <a href="../pages/login.html" class="urlVariables">
-                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
-                    <div class="container product-info">
-                        <h4 class="select-none">Lorem Ipsum</h4>
-                    </div>
-                    </a>
-                </div>
-                <div class="card-popular">
-                    <a href="../pages/login.html" class="urlVariables">
-                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
-                    <div class="container product-info">
-                        <h4 class="select-none">Lorem Ipsum</h4>
-                    </div>
-                    </a>
-                </div>
-                <div class="card-popular">
-                    <a href="../pages/login.html" class="urlVariables">
-                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
-                    <div class="container product-info">
-                        <h4 class="select-none">Lorem Ipsum</h4>
-                    </div>
-                    </a>
-                </div>
-                <div class="card-popular">
-                    <a href="../pages/login.html" class="urlVariables">
-                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
-                    <div class="container product-info">
-                        <h4 class="select-none">Lorem Ipsum</h4>
-                    </div>
-                    </a>
-                </div>
+            <div class="">
+                <a href="../pages/all-products.html">
+                  <img class="size-[]" src="../images/Carolian Merch Logo.svg" alt="" class="w-xs">
+                </a>
+            </div>
+            <div class="flex items-center">
+                <!-- <img src="../images/search-interface-symbol.png" alt="" class="size-[2rem] mr-[1em]"> -->
+                <a href="../pages/shopping-cart.html"><img src="../images/shopping-bag.png" alt="" class="size-[3rem]"></a>
             </div>
         </div>
+    </header>
 
-        <!-- Departments -->
-
+    <main class="flex">
+        <aside class="w-[16vw] bg-yellow-400 text-black flex flex-col">
+            <div class="py-14">
+                <a href="../pages/all-products.html" >
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">All Merch</div>
+                </a>
+                <a href="../pages/sas.html?category=mens-shirts" >
+                    <!-- SAS Merch = men-shirts category -->
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SAS Merch</div>
+                </a>
+                <a href="../pages/safad.html?category=mens-shoes" >
+                    <!-- SAFAD Merch = mens-shoes category -->
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SAFAD Merch</div>
+                </a>
+                <a href="../pages/soe.html?category=mens-watches" >
+                    <!-- SOE Merch = mens-watches category -->
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SOE Merch</div>
+                </a>
+                <a href="../pages/slg.html?category=womens-bags" >
+                    <!-- SLG Merch = womens-bags category -->
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SLG Merch</div>
+                </a>
+                <a href="../pages/shcp.html?category=womens-dresses" >
+                    <!-- SHCP Merch = womens-dresses category -->
+                    <div class="bg-black/60 text-white px-8 py-3 active:bg-black/60 border-b-white border-b-3">SHCP Merch</div>
+                </a>
+                <a href="../pages/sbe.html?category=womens-shoes" >
+                    <!-- SBE Merch = womens-shoes category -->
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SBE Merch</div>
+                </a>
+                <a href="../pages/sed.html?category=womens-watches" >
+                    <!-- SEd Merch = womens-watches category -->
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SEd Merch</div>
+                </a>
+            </div>
+        </aside>
+        <section class="Popular">
+            <div class="Title" id="popular">
+                <h2>SHCP Merch</h2>
+            </div>
+            <div id="product-parent-container" class="popular-container" style="width: 80vw !important">
+                <!-- Template by Olmo-->
+                <!-- <div class="card-popular product-card">
+                    <a href="#" class="urlVariables">
+                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
+                    <div class="container product-info">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="card-popular product-card">
+                    <a href="#" class="urlVariables">
+                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
+                    <div class="container product-info">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="card-popular product-card">
+                    <a href="#" class="urlVariables">
+                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
+                    <div class="container product-info">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="card-popular product-card">
+                    <a href="../pages/login.html" class="urlVariables">
+                    <img src="../images/SAS.jpg" alt="Avatar" style="width:100%" class="popular-image">
+                    <div class="container product-info">
+                        <h4 class="select-none">Lorem Ipsum</h4>
+                    </div>
+                    </a>
+                </div> -->
+                <!-- Add more product cards -->
+            </div>
+        </section>
     </main>
     <!-- TailwindCSS Footer Style -->
     <footer class="px-[2.5rem] py-[1.5rem] bg-black/90 text-white">
@@ -112,11 +130,12 @@
             </div>
             <div>
                 <a href="../index.html">
-                    <img id="foot-logo"src="./images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
+                    <img id="foot-logo"src="../images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
                 </a>
             </div>
         </div>
     </footer>
     <script src="../js/index-piczon.js"></script>
+    <script type="module" src="../js/modules/productsByCategory.js"></script>
 </body>
 </html>

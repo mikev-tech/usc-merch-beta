@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USC Online Merch Shop</title>
+    <title>All Merch of USC Merch</title>
     <link rel="icon" type="image/ico" href="../images/favicon.ico">
-    <meta name="description" content="Offical USC online merch shop for students and alumni">
 
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/index-piczon.css">
@@ -13,15 +12,13 @@
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="inter-font-custom">
-    <!--Header/Navbar-->
-    <!-- TailwindCSS Header & Nav -->
+<body class="inter-font-custom tracking-wide text-gray-900">
     <!-- Logged In Header nav -->
     <header class="px-[2.5rem] bg-yellow-400">
         <div class="flex items-center justify-between p-[20px]">
-            <div>
+            <!-- <div>
                 <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
-            </div>
+            </div> -->
             <div class="">
                 <a href="../pages/all-products.html">
                   <img class="size-[]" src="../images/Carolian Merch Logo.svg" alt="" class="w-xs">
@@ -33,12 +30,11 @@
             </div>
         </div>
     </header>
-
     <main class="flex">
         <aside class="w-[16vw] bg-yellow-400 text-black flex flex-col">
             <div class="py-14">
                 <a href="../pages/all-products.html" >
-                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">All Merch</div>
+                    <div class="bg-black/60 text-white px-8 py-3 active:bg-black/60 border-b-white border-b-3">All Merch</div>
                 </a>
                 <a href="../pages/sas.html?category=mens-shirts" >
                     <!-- SAS Merch = men-shirts category -->
@@ -62,17 +58,28 @@
                 </a>
                 <a href="../pages/sbe.html?category=womens-shoes" >
                     <!-- SBE Merch = womens-shoes category -->
-                    <div class="bg-black/60 text-white px-8 py-3 active:bg-black/60 border-b-white border-b-3">SBE Merch</div>
+                    <div class="hover:bg-black/60 hover:text-white px-8 py-3">SBE Merch</div>
                 </a>
                 <a href="../pages/sed.html?category=womens-watches" >
                     <!-- SEd Merch = womens-watches category -->
                     <div class="hover:bg-black/60 hover:text-white px-8 py-3">SEd Merch</div>
                 </a>
+                <div id="logged-side-tabs" style="display: none;">
+                    <!-- Will display if there is user access token-->
+                    <a href="../pages/profile.html" id="profile-settings">
+                        <!-- Profile Settings -->
+                        <div class="hover:bg-black/60 hover:text-white px-8 py-3">Settings</div>
+                    </a>
+                    <a href="../pages/login.html" id="logout">
+                        <!-- Profile Settings -->
+                        <div class="hover:bg-black/60 hover:text-white px-8 py-3">Logout</div>
+                    </a>
+                </div>
             </div>
         </aside>
         <section class="Popular">
             <div class="Title" id="popular">
-                <h2>SBE Merch</h2>
+                <h2>All Merch</h2>
             </div>
             <div id="product-parent-container" class="popular-container" style="width: 80vw !important">
                 <!-- Template by Olmo-->
@@ -111,8 +118,7 @@
                 <!-- Add more product cards -->
             </div>
         </section>
-    </main>
-    <!-- TailwindCSS Footer Style -->
+    </main> 
     <footer class="px-[2.5rem] py-[1.5rem] bg-black/90 text-white">
         <div class="flex flex-wrap-reverse items-center justify-between gap-[2em] p-[1.25rem]">
             <div>
@@ -129,13 +135,15 @@
                 </div>
             </div>
             <div>
-                <a href="../index.html">
-                    <img id="foot-logo"src="../images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
+                <a href="../pages/all-products.html">
+                  <img src="../images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
                 </a>
             </div>
         </div>
     </footer>
-    <script src="../js/index-piczon.js"></script>
-    <script type="module" src="../js/modules/productsByCategory.js"></script>
+
+    <!-- <script src="../js/sidemenu.js"></script> -->
+    <script type="module" src="../js/modules/allProducts.js"></script>
+    <script type="module" src="../js/modules/aside-sidebar.js"></script>
 </body>
 </html>

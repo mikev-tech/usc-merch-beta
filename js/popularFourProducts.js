@@ -29,7 +29,7 @@ async function displayProducts(productCards, products, accessToken){
         const title = product.title;
         // Only use the first image if available
         const imageUrl = product.images && product.images.length > 0 ? 
-            product.images[0] : '/images/SAS.jpg'; // double check the SAS.jpg relative link
+            product.images[0] : '../images/SAS.jpg'; // double check the SAS.jpg relative link
 
         // Assigns product data value to card
         cardTitle.textContent = title;
@@ -42,7 +42,7 @@ async function displayProducts(productCards, products, accessToken){
 }
 
 
-// JS-Components
+// JS-Components: Check if there is login user access token
 function checkUserAccessToken(){
     const loginAuth = localStorage.getItem('loginAuth');
     // Check if there is loginAuth key stored locally
