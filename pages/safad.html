@@ -68,6 +68,17 @@
                     <!-- SEd Merch = womens-watches category -->
                     <div class="hover:bg-black/60 hover:text-white px-8 py-3">SEd Merch</div>
                 </a>
+                <div id="logged-side-tabs" style="display: none;">
+                    <!-- Will display if there is user access token-->
+                    <a href="../pages/profile.html" id="profile-settings">
+                        <!-- Profile Settings -->
+                        <div class="hover:bg-black/60 hover:text-white px-8 py-3">Settings</div>
+                    </a>
+                    <a href="../pages/login.html" id="logout">
+                        <!-- Profile Settings -->
+                        <div class="hover:bg-black/60 hover:text-white px-8 py-3">Logout</div>
+                    </a>
+                </div>
             </div>
         </aside>
         <section class="Popular">
@@ -137,5 +148,6 @@
     </footer>
     <script src="../js/index-piczon.js"></script>
     <script type="module" src="../js/modules/productsByCategory.js"></script>
+    <script type="module" src="../js/modules/aside-sidebar.js"></script>
 </body>
 </html>
