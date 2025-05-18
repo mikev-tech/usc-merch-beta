@@ -1,6 +1,6 @@
 // import components
-import createUser from '/js/components/signupCreateUser.js';
-import updateSignupUserSession from '/js/components/updateSignupUserSession.js';
+import createUser from '../components/signupCreateUser.js';
+import updateSignupUserSession from '../components/updateSignupUserSession.js';
 
 // Get signup form element
 const signup = document.getElementById('signupForm');

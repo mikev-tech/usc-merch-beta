@@ -1,4 +1,4 @@
-import loginAuth from '/js/components/loginAuthentication.js'
+import loginAuth from '../components/loginAuthentication.js'
 
 // Get Form Element
 const loginForm = document.getElementById('loginForm');
