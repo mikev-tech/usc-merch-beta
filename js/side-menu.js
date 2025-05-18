@@ -1,5 +1,5 @@
 // Select elements
-const menuBtn = document.querySelector('.menu-btn-side');
+const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.close-btn');
 const sidebar = document.querySelector('.sidebar');
 const overlay = document.querySelector('.overlay');

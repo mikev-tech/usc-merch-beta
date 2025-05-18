@@ -1,5 +1,5 @@
 let menuHamburger = document.getElementById("menu-hamburger");
-let sideMenu = document.getElementById("sidebar");
+let sideMenu = document.getElementById("nav-sidebar");
 let close = document.getElementById("x-close");
 let overlay = document.getElementById("overlay");
 
