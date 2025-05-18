@@ -9,10 +9,34 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="../css/font.css">
+
+    <style>
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 98;
+        }
+
+        #nav-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: yellow;
+            display: none;
+            z-index: 99;
+        }
+    </style>
 </head>
 <body class="inter-font-custom tracking-wide text-gray-900">
     <!-- Sidebar Menu -->
-    <section id="sidebar" class="size-full absolute z-10 hidden">
+    <!-- <section id="nav-sidebar" class="size-full absolute z-10 hidden">
         <aside class="w-xs h-full absolute z-20 bg-yellow-400 duration-[0.5ms]">
             <div class="flex flex-col items-center gap-[2em] text-center text-xl py-[6rem]" >
                 <div class="flex flex-col gap-[1rem]">
@@ -31,9 +55,39 @@
             </div>
         </aside>
         <div class="w-full h-full bg-black/90 duration-[0.5ms]" id="overlay">
-          <!-- Overlay -->
         </div>
-    </section>
+    </section> -->
+    <div class="overlay"></div>
+    <aside id="nav-sidebar" class="size-full absolute z-10 hidden bg-yellow-400">
+        <button class="close-btn">&times;</button>
+        <section>
+            <!-- Profile -->
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div class="username"></div>
+            </div>
+
+            <!-- Sidebar Menu Links-->
+            <div>
+                <ul>
+                    <li><a href="#">Profile Settings</a></li>
+                    <li><a href="#">Add/Remove Products</a></li>
+                    <li><a href="#">All Merch Products</a></li>
+                    <li><a href="#">School Merch</a></li>
+                    <li><a href="#">My Cart</a></li>
+                </ul>
+            </div>
+            <!-- Log out -->
+            <div class="logout">
+                <a href="#">Logout</a>
+            </div>
+        </section>
+    </aside>
+
+
+
     <header class="px-[2.5rem] bg-yellow-400">
         <div class="flex items-center justify-between p-[20px]">
             <div>
