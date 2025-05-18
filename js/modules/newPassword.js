@@ -1,6 +1,6 @@
-import filterUser from "/js/components/filterUser.js";
-import updatePassword from "/js/components/updatePassword.js";
-import forgotPasswordSession from "/js/components/forgotPasswordSession.js";
+import filterUser from "../components/filterUser.js";
+import updatePassword from "../components/updatePassword.js";
+import forgotPasswordSession from "../components/forgotPasswordSession.js";
 
 
 // Get forgotPasswordForm element
