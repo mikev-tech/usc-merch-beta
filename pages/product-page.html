@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="icon" type="image/ico" href="../images/favicon.ico">
-    <!-- TailwindCSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/index-piczon.css">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="inter-font-custom tracking-wide text-gray-900">
     <!-- Sidebar Menu -->
@@ -22,7 +24,7 @@
                 <nav>
                     <ul>
                         <li id="x-close" class="absolute top-[0.8rem] right-[1.4rem] text-2xl hover:text-gray-700"><a href="javascript:void(0)" id="closebtn">&times;</a></li>
-                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../index.html">Home</a></li>
+                        <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/all-products.html">Home</a></li>
                         <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="#">New Merch</a></li>
                         <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/product-lists.html">Department</a></li>
                         <li class="uppercase tracking-wide mb-[1em] hover:text-gray-700"><a href="../pages/login.html">Logout</a></li>
@@ -69,7 +71,7 @@
                 <img id="menu-hamburger" src="../images/hamburger.png" alt="" class="size-[2rem] cursor-pointer">
             </div>
             <div class="">
-                <a href="../index.html">
+                <a href="../pages/all-products.html">
                   <img class="size-[]" src="../images/Carolian Merch Logo.svg" alt="" class="w-xs">
                 </a>
             </div>
@@ -200,9 +202,9 @@
           <div class="bg-white">
             <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
               <h2 class="sr-only">Products</h2>
-          
-              <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                <a href="#" class="group">
+
+              <div id="product-parent-container" class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                <!-- <a href="#" class="group">
                   <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
                   <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
                   <p class="mt-1 text-lg font-medium text-gray-900">$48</p>
@@ -221,7 +223,7 @@
                   <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8">
                   <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
                   <p class="mt-1 text-lg font-medium text-gray-900">$35</p>
-                </a>
+                </a> -->
                 <!-- More products... -->
               </div>
             </div>
@@ -244,13 +246,15 @@
                 </div>
             </div>
             <div>
-                <a href="../index.html">
+                <a href="../pages/all-products.html">
                   <img src="../images/usc-logo/Carolian Reversed Logo.png" alt="Carolian Merch Logo">
                 </a>
             </div>
         </div>
     </footer>
     <script src="../js/sidemenu.js"></script>
+    <script src="./js/index-piczon.js"></script>
     <script type="module" src="../js/getMainProduct.js"></script>
+    <script type="module" src="../js/modules/similarProducts-productPage.js"></script>
 </body>
 </html>

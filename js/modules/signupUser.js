@@ -28,6 +28,6 @@ signup.addEventListener('submit', async function(event){
         const userObj = await updateSignupUserSession(newUser);
         alert('new User is created');
         console.log(userObj);
-        window.location.href = '/pages/login.html'
+        window.location.href = '../../login.html'
     }
 });
